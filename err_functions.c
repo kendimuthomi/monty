@@ -16,7 +16,7 @@ int usage_error(void)
  *
  * Return: (EXIT_FAILURE) always.
  */
-int malloc_error(void)
+int mem_error(void)
 {
 	fprintf(stderr, "Error: malloc failed\n");
 	return (EXIT_FAILURE);
