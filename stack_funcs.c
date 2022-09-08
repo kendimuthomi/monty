@@ -7,13 +7,13 @@
  */
 void free_stack(stack_t **stack)
 {
-	stack_t *tmp = *stack;
+	stack_t *temp = *stack;
 
 	while (*stack)
 	{
-		tmp = (*stack)->next;
+		temp = (*stack)->next;
 		free(*stack);
-		*stack = tmp;
+		*stack = temp;
 	}
 }
 
@@ -31,7 +31,7 @@ int init_stack(stack_t **stack)
 
 	s = malloc(sizeof(stack_t));
 	if (s == NULL)
-		return (malloc_error());
+		return (mem_error());
 
 	s->n = STACK;
 	s->prev = NULL;
