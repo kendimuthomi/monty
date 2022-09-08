@@ -1,12 +1,4 @@
 #include "monty.h"
-/*
- * File: run_monty.c
- * Auth: Bennett Dixon
- *       Brennan D Baraban
- */
-
-#include "monty.h"
-#include <string.h>
 
 void free_tokens(void);
 unsigned int token_arr_len(void);
