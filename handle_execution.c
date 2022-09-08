@@ -127,7 +127,7 @@ int run_monty(FILE *script_fd)
 			if (is_empty_line(line, DELIMS))
 				continue;
 			free_stack(&stack);
-			return (malloc_error());
+			return (mem_error());
 		}
 		else if (op_toks[0][0] == '#') /* comment line */
 		{
