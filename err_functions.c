@@ -12,7 +12,7 @@ int usage_error(void)
 }
 
 /**
- * malloc_error - Prints malloc error messages.
+ * mem_error - Prints malloc error messages.
  *
  * Return: (EXIT_FAILURE) always.
  */

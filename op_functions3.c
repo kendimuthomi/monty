@@ -50,6 +50,5 @@ void monty_pstr(stack_t **stack, unsigned int line_number)
 	}
 
 	printf("\n");
-	
 	(void)line_number;
 }
